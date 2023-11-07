@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+}
+header, footer {
+    background-color: #040404;
+    /*#333 bg-dark */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    height: max-content;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+    font-size: 25px;
+}
+
+section {
+    padding: 20px;
+}
+/* CSS for the sidebar */
+.sidebar {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 80px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0; /* Stay on the left */
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 200px;
+  }
+  
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  #projects{
+    text-align: center;
+    font-size: 50px;
+    /*color: rgb(8, 8, 8);*/
+    text-shadow: 0 0 2px #3e3d3d, 0 0 2px #3e3d3d, 0 0 2px #555555, 0 0 2px #515050;
+    color:aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  #skl{
+    text-align: center;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  #cont{
+    text-align: center;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  #Cont{
+    font-size: xx-large;
+    text-align: center;
+    color: antiquewhite;
+  }
+  #edu{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  #mob{
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin-left: -520px;
+    margin-right: 200px;
+    margin-top: 250px;
+    color:beige;
+    opacity: 60%;
+    border: #818181;
+  }
+  .skills{
+    display: flex;
+    justify-content: center;
+  }
+  .skill-bar {
+    background-color: #ddd;
+    height: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 130%;
+  }
+  .skill-bar-fill {
+    background-color: #af814c;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  #more{
+    font-size: 30px; 
+    color: rgb(28, 11, 214); 
+    margin-top: -150px;
+    margin-bottom: 300px;
+    padding-left: 900px;
+  }
+  .back-to-top{
+    text-align: center;
+    align-items: first baseline;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    display: none;
+    font-size: small;
+  }

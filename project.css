@@ -1,0 +1,92 @@
+.row {
+  margin: auto 0;
+}
+
+.mcard {
+  float: left;
+  padding: 1.5rem;
+  min-width: 500px;
+}
+.mcard .menu-content {
+  margin: 0;
+  padding:0;
+  list-style-type: none;
+}
+.mcard .menu-content::before, .mcard .menu-content::after {
+  content: "";
+  display: table;
+}
+.mcard .menu-content::after {
+  clear: both;
+}
+.mcard .menu-content li {
+  display: inline-block;
+}
+.mcard .menu-content a {
+  color: #fff;
+}
+.mcard .wrapper {
+  background-color: #fff;
+  min-height: 340px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+.mcard .wrapper:hover .data {
+  transform: translateY(0);
+}
+.mcard .data {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(calc(80px + 1em));
+  transition: transform 0.3s;
+}
+.mcard .data .content {
+  padding: 1.5em;
+  position: relative;
+  z-index: 1;
+}
+.mcard .type {
+  font-size: 12px;
+}
+.mcard .title {
+  margin-top: 10px;
+}
+.mcard .text {
+  height: 70px;
+  margin: 0;
+}
+.mcard input[type=checkbox] {
+  display: none;
+}
+.mcard input[type=checkbox]:checked + .menu-content {
+  transform: translateY(-60px);
+}
+.mcontent {
+  background-color: rgba(0,0,0,0.5);
+  color: rgb(253, 252, 252);
+  box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+  min-height: 200px;
+}
+.title a {
+  color: silver;
+  text-shadow: 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000;
+}
+.menu-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+}
+.menu-content li {
+  text-align: center;
+  width: 3rem;
+  background-color: #290619;
+  height: 3rem;
+  position: relative;
+}
+.menu-content a {
+  font-size: 24px;
+}
+/*# sourceMappingURL=project.css.map */
