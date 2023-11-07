@@ -1,0 +1,107 @@
+.container {
+    display: flex;
+  }
+  
+  .left {
+    flex: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.8rem;
+  }
+  
+  .right {
+    flex: 70%;
+    padding: 10px;
+  }
+:root {
+    --color-black: black;
+    --color-white: white;
+    --color-grey: #494949;
+    --sticky-top-pos: 30vh;
+    --buffer: 5rem;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+  .timeline {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .timeline__section {
+    display: grid;
+    grid-template-columns: auto 5px 50px auto;
+    align-items: start;
+    position: relative;
+  }
+  
+  .timeline__left {
+    font-size: 1rem;
+    text-align: right;
+    text-transform: uppercase;
+  }
+  
+  .timeline__left,
+  .timeline__middle,
+  .timeline__tracker {
+    position: sticky;
+    top: var(--sticky-top-pos);
+    /*   margin-bottom: var(--buffer); */
+  }
+  
+  .timeline__left,
+  .timeline__middle {
+    margin-bottom: var(--buffer);
+  }
+  
+  .timeline__right {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(128, 128, 128, 1) 0%,
+      rgba(128, 128, 128, 1) 100%
+    );
+  }
+  
+  .timeline__right > div {
+    background-color: var(--color-black);
+    padding-bottom: var(--buffer);
+    padding-left: 45px;
+    margin-left: 4px;
+  }
+  
+  .timeline__date > div:first-child {
+    font-size: 1.3rem;
+  }
+  
+  .timeline__bullet {
+    --bullet-dims: 20px;
+    background-color: var(--color-white);
+    width: var(--bullet-dims);
+    height: var(--bullet-dims);
+    border-radius: 99999%;
+    transform: translateX(calc(var(--bullet-dims) / 2 + 2px));
+    float: right;
+  }
+  
+  .timeline__content {
+    font-size: 2rem;
+    color: var(--color-grey);
+    transition: color 1s cubic-bezier(0, 0.39, 0.58, 1);
+  }
+  
+  .animate-on-scroll {
+    color: var(--color-white);
+  }
+  
