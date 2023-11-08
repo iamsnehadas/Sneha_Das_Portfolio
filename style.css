@@ -100,7 +100,7 @@ section {
     width: 130%;
   }
   .skill-bar-fill {
-    background-color: #af814c;
+    background-color: #cb985d;
     height: 100%;
     left: 0;
     position: absolute;
@@ -122,3 +122,20 @@ section {
     display: none;
     font-size: small;
   }
+  .light-mode {
+    background-color: #9E665C;/*rgb(122, 66, 66);*/
+  }
+
+#button{
+  padding-left: 15px;
+  height: 35px;
+  width: auto;
+  margin-bottom: 80px;
+  margin-top: -300px;
+}
+
+::placeholder{
+  color:beige;
+  opacity: 90%;
+  font-weight: lighter;
+}
