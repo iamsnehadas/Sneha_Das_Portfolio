@@ -83,7 +83,7 @@
                     <style>
                         .card-back {
                           box-shadow: 3px 3px 5px rgb(63, 2, 2);
-                            background-color: #9E0031;/*454545*//*5 19 55*/ /* this will change the background color of the card when it is flipped */
+                            background-color: #4C8577;/*454545, 9E0031*//*5 19 55*/ /* this will change the background color of the card when it is flipped */
                         }
                     </style>
                 </div>
@@ -104,6 +104,7 @@
 
     <div class="sidebar" style="text-align: bottom;">
       <!-- Social media links -->
+      <img src="download-modified.png" alt="yin/yang" onclick="myFunction()" id="button">
       <a href="mailto:snehadas0819@gmail.com" target="_blank"><img src="Gmail_Logo_32px.png" alt="gmail" style="height: 30px; width: 30px;"></a><br>
       <a href="https://twitter.com/i_am_snehadas" target="_blank"><img src="logo-white.png" alt="X" style="height: 30px; width: 30px;"></a><br>
       <a href="https://www.linkedin.com/in/iamsnehadas" target="_blank"><img src="in-box-variations.png" alt="LinkedIn" style="height: 35px; width: 35px;"></a><br>
@@ -152,7 +153,7 @@
             </div>
           </div>
           <div class="timeline__section">
-            <div class="timeline__left" style="padding-left:202px;"> <!--200,190,186,198,188,202-->
+            <div class="timeline__left" id="t2" style="padding-left:202px;"> <!--200,190,186,198,188,202-->
               <div class="timeline__date" >
                 <div>Serampore Girls' <br>High School</div>
                 <div>2019- 2021</div>
@@ -247,6 +248,24 @@
               </div>
             </div>
           </div>
+          <!--
+            <div class="mcard" style="padding-left: 150px;">
+            <div class="wrapper">
+              <ul class="menu-content">
+                  <li><a href="#"><i class="fab fa-github"></i></a></li>
+                  <li><a href="#"><i class="fab fa-html5"></i></a></li>
+                  <li><a href="#"><i class="fab fa-css3-alt"></i></a></li>
+                  <li><a href="#"><i class="fab fa-js"></i></a></li>
+              </ul>
+              <div class="data">
+                <div class="mcontent">
+                  <h1 class="title"><a href="#">Project Card</a></h1>
+                  <p class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.""</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          -->
         </div>
       </div>
       <div id="more">
@@ -268,11 +287,11 @@
             <h2>Front-end Technologies <br> and tools</h2><br>
             <h5>HTML</h5>
             <div class="skill-bar">
-              <div class="skill-bar-fill" style="width: 70%"></div>
+              <div class="skill-bar-fill" style="width: 75%"></div>
             </div>
             <h5>CSS</h5>
             <div class="skill-bar">
-              <div class="skill-bar-fill" style="width: 70%"></div>
+              <div class="skill-bar-fill" style="width: 75%"></div>
             </div>
             <h5>JS</h5>
             <div class="skill-bar">
@@ -280,15 +299,15 @@
             </div>
             <h5>Git</h5>
             <div class="skill-bar">
-              <div class="skill-bar-fill" style="width: 65%"></div>
+              <div class="skill-bar-fill" style="width: 70%"></div>
             </div>
             <h5>Canva</h5>
               <div class="skill-bar">
-                <div class="skill-bar-fill" style="width: 80%"></div>
+                <div class="skill-bar-fill" style="width: 90%"></div>
               </div>
               <h5>Figma</h5>
               <div class="skill-bar">
-                <div class="skill-bar-fill" style="width: 40%"></div>
+                <div class="skill-bar-fill" style="width: 60%"></div>
               </div>
           </div>
         </div>
@@ -306,37 +325,14 @@
           </div>
           <h5>Python</h5>
           <div class="skill-bar">
-            <div class="skill-bar-fill" style="width: 35%"></div>
+            <div class="skill-bar-fill" style="width: 45%"></div>
           </div>
           <h5>Java</h5>
           <div class="skill-bar">
-            <div class="skill-bar-fill" style="width: 30%"></div>
+            <div class="skill-bar-fill" style="width: 40%"></div>
           </div>
         </div>
     </div>
-        <!--
-          <div>
-          <div class="skill-subsection">
-            <h2>Soft-Skills</h2>
-            <h5>Communication</h5>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" style="width: 90%"></div>
-            </div>
-            <h5>Problem-solving</h5>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" style="width: 90%"></div>
-            </div>
-            <h5>Adaptability</h5>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" style="width: 95%"></div>
-            </div>
-            <h5>Team-work</h5>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" style="width: 98%"></div>
-            </div>
-          </div>
-        </div>
-        -->
     </section>
 
     <br><br><br><br><br><br>
@@ -384,7 +380,7 @@
                 
               </div>
               <div class="col-75">
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:180px"></textarea>
               </div>
             </div>
             <div class="row">
@@ -406,7 +402,7 @@
 </div>
 </footer>
 
-
+<script src="script.js"></script>
 
 </body>
 </html>
