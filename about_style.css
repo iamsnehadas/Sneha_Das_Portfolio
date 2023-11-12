@@ -3,7 +3,7 @@ body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.container {
+.abcontainer {
     display: flex; /* this will make the container element use flexbox layout */
     justify-content: center; /* this will center the container element horizontally */
     align-items: center; /* this will center the container element vertically */
@@ -32,8 +32,7 @@ body {
 .card {
     width: 500px; /*590 480*/
     height: 480px;/*700 620*/
-    background-color:#363062;/*4 25 45*//*176B87,#0E6BA8  */
-    color: white;
+    background-color: #201A38;/*4 25 45*//*176B87,#0E6BA8,#363062,#B2B1CF  */
     margin-top: 20px;
     margin-right: 40px;
     margin-left: -100px;
@@ -54,7 +53,10 @@ body {
     font-size: 20px;
     padding: 20px;
 }
-
+.card-front{
+    color: moccasin;    
+    text-shadow: 0 0 4px #000000, 0 0 4px #000000, 0 0 4px #000000, 0 0 4px #000000;
+}
 .card-front, .card-back {
     width: 100%;
     height: 100%;
@@ -66,6 +68,8 @@ body {
 
 .card-back {
     transform: rotateY(180deg); /* this will rotate the back element by 180 degrees */
+    color: floralwhite;
+    text-shadow: 0 0 0.9px #000000,0 0 0.9px #000000,0 0 0.9px #000000,0 0 0.9px #000000 ;
 }
 
 .card:hover .card-front {
