@@ -1,4 +1,42 @@
-.clock {
+  /* Styles for mobile devices */
+  @media (max-width: 767px) {
+    /* Insert your CSS rules here */
+    .clock {
+      max-width: 130px;
+      display:inline-block;
+      background-color: rgba(36, 36, 36, 0.218);
+      opacity: 80%;
+      border-radius: 35px;
+      padding-bottom: 15px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px; /*40,50*/
+      margin-left: 0px;
+      margin-right: 10px;
+      box-shadow: 1px 2px 2px 1px whitesmoke;
+    }
+    #date{
+      font-size: 20px;
+    }
+    #date,#time {
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgb(255, 248, 248);
+      text-shadow: 0 0 4px #000000, 0 0 4px #000000, 0 0 4px #000000, 0 0 4px #000000;
+    }  
+    .clock p {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      line-height: 1.2;
+    }
+  }
+  
+  
+
+@media (min-width: 992px){
+  .clock {
     display:inline-block;
     background-color: rgba(36, 36, 36, 0.218);
     opacity: 80%;
@@ -35,3 +73,6 @@
     
     font-weight: bold;
   }
+
+
+}
