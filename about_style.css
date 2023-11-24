@@ -1,5 +1,6 @@
+@media (min-width: 992px) {
+    
 body {
-    background-color:#000000; /*#33, 104, 105;*//*4,3,46*//*****1 1 23*****/ /*001C30;*/
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -11,7 +12,11 @@ body {
 .my-image{
     padding: 0;
     margin-top: 0;
+    color:tan;
 }
+.light-mode .my-image{
+    color:wheat;
+  }
 .about {
     width: 300px;
     height: 200px;
@@ -32,17 +37,21 @@ body {
 .card {
     width: 500px; /*590 480*/
     height: 480px;/*700 620*/
-    background-color: #201A38;/*4 25 45*//*176B87,#0E6BA8,#363062,#B2B1CF  */
+    background-color: #3b1b0e;/*4 25 45*//*176B87,#0E6BA8,#363062,#B2B1CF  */
+    background: linear-gradient(#3b1b0e,#3b1b0e22,rgb(2, 16, 2));
     margin-top: 20px;
     margin-right: 40px;
     margin-left: -100px;
     padding: 20px;
-    box-shadow: 3px 3px 5px rgb(182, 180, 193);
+    box-shadow: 3px 3px 5px rgb(169, 128, 81);
     position: relative; /* this will allow us to position the front and back elements */
     perspective: 500000px; /* this will create a 3D effect when the card is flipped */
     
 }
-
+.light-mode .card{
+    background-color: #052025;
+    background: linear-gradient(#052025,#178798ec,black);
+}
 .card-title {
     font-size: 40px; /*40 24*/
     font-weight: bold;
@@ -54,7 +63,7 @@ body {
     padding: 20px;
 }
 .card-front{
-    color: moccasin;    
+    color: mistyrose;    
     text-shadow: 0 0 4px #000000, 0 0 4px #000000, 0 0 4px #000000, 0 0 4px #000000;
 }
 .card-front, .card-back {
@@ -68,10 +77,16 @@ body {
 
 .card-back {
     transform: rotateY(180deg); /* this will rotate the back element by 180 degrees */
-    color: floralwhite;
-    text-shadow: 0 0 0.9px #000000,0 0 0.9px #000000,0 0 0.9px #000000,0 0 0.9px #000000 ;
+    color: mistyrose;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px rgb(63, 2, 2);
+    text-shadow: 0 0 2px #000000, 0 0 2px #000000, 0 0 2px #000000, 0 0 2px #000000;
+    background-color: #4b2730c0;/*454545, 9E0031*//*5 19 55*/ /* this will change the background color of the card when it is flipped */
+    background: linear-gradient(#4b2730c0,lightsalmon);
 }
-
+.light-mode .card-back{
+    background: linear-gradient(black,moccasin,black);
+}
 .card:hover .card-front {
     transform: rotateY(180deg); /* this will flip the front element when the card is hovered */
 }
@@ -89,4 +104,99 @@ body {
 @keyframes fade-in {
     from {opacity: 0;} /* this will make the element start with zero opacity */
     to {opacity: 1;} /* this will make the element end with full opacity */
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for mobile devices */
+@media (max-width: 767px) {
+    
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.my-image{
+    padding: 0;
+    margin-top: 0;
+    color:tan;
+    font-size: 10px;
+}
+.light-mode .my-image{
+    color:wheat;
+  }
+
+.card {
+    width: 100%; /*590 480*/
+    height: 270px;/*700 620*/
+    background-color: #3b1b0e;/*4 25 45*//*176B87,#0E6BA8,#363062,#B2B1CF  */
+    background: linear-gradient(#3b1b0e,#3b1b0e22,rgb(2, 16, 2));
+    margin-top: 0px;
+    margin-right: 0px;
+    box-shadow: 3px 3px 5px rgb(169, 128, 81);
+    position: relative; /* this will allow us to position the front and back elements */
+    perspective: 5000px; /* this will create a 3D effect when the card is flipped */
+    
+}
+.light-mode .card{
+    background-color: #052025;
+    background: linear-gradient(#052025,#178798ec,black);
+}
+
+.card-content {
+    font-size: 12px;
+    padding: 5px;
+}
+.card-front{
+    color: mistyrose;    
+    text-shadow: 0 0 4px #000000, 0 0 4px #000000, 0 0 4px #000000, 0 0 4px #000000;
+}
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* this will make the front and back elements overlap */
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /* this will hide the back side of the element when it is flipped */
+}
+
+.card-back {
+    transform: rotateY(180deg); /* this will rotate the back element by 180 degrees */
+    color: mistyrose;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px rgb(63, 2, 2);
+    text-shadow: 0 0 2px #000000, 0 0 2px #000000, 0 0 2px #000000, 0 0 2px #000000;
+    background-color: #4b2730c0;/*454545, 9E0031*//*5 19 55*/ /* this will change the background color of the card when it is flipped */
+    background: linear-gradient(#4b2730c0,lightsalmon);
+}
+.light-mode .card-back{
+    background: linear-gradient(black,moccasin,black);
+}
+.card:hover .card-front {
+    transform: rotateY(180deg); /* this will flip the front element when the card is hovered */
+}
+
+.card:hover .card-back {
+    transform: rotateY(360deg); /* this will flip the back element when the card is hovered */
+}
+
+.fade-in {
+    animation-name: fade-in; /* this will apply the fade-in animation to the element */
+    animation-duration: 1s; /* this will set the duration of the animation to 1 second */
+    animation-fill-mode: forwards; /* this will make the element retain the final state of the animation */
+}
+
+@keyframes fade-in {
+    from {opacity: 0;} /* this will make the element start with zero opacity */
+    to {opacity: 1;} /* this will make the element end with full opacity */
+}
 }
