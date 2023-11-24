@@ -9,8 +9,8 @@
     <link rel="icon"  href="About_portfolio_logo-modified.png">
 </head>
 <body onload="showTime();">
-    <header class="text-white py-5" style="height: 200px; width: auto;">
-        <div class="container text-center">
+    <header class="text-white py-5">
+        <div class="getcontainer text-center">
             <div id="Show-clock">
               <link rel="stylesheet" href="cl_style.css">
               <div class="clock">
@@ -21,9 +21,8 @@
               </div>
               <script src="cl_scr.js"></script>
             </div>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-0" style="box-shadow: 3px 3px rgb(144, 140, 146) ;"> <!--style="margin-left: 80px; margin-right: -150px;"-->
-                
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <nav class="navbar navbar-expand-lg navbar-dark"> <!--style="margin-left: 80px; margin-right: -150px;"-->                
+                <div class="justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="#My_about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#Education">Education</a></li>
@@ -33,18 +32,7 @@
                         <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1hf4Atev_jQ6tMTBc5DerXLvIt2Wc4t-N/view?usp=drivesdk">Resume</a></li>
                     </ul>
                 </div>
-            </nav> 
-            <style>
-                body {
-                    background-color:#050505; /*#33, 104, 105;*//*4,3,46*//*****1 1 23*****/ /*001C30;*/
-                    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-                }
-                .container {
-                    display: flex; /* this will make the container element use flexbox layout */
-                    justify-content: center; /* this will center the container element horizontally */
-                    align-items: center; /* this will center the container element vertically */
-                }
-            </style>
+            </nav>
         </div>       
     </header> 
 
@@ -55,7 +43,7 @@
 
 
     <section id="My_about">
-        <div class="container"> <!-- this is the parent element that contains the card -->          
+        <div class="abtcontainer"> <!-- this is the parent element that contains the card -->          
             <div class="card">
                 <div class="card-front">
                     <!--<div class="card-title">Hello!</div>-->
@@ -79,23 +67,18 @@
                         I love to spend my free time with story books, music and maybe a cup a coffee.</div>
                     <link rel="stylesheet" href="about_style.css">
                     <style>
-                        .card-back {
-                          box-shadow: 3px 3px 5px rgb(63, 2, 2);
-                          text-shadow: 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000;
-                          background-color: #4C8577;/*454545, 9E0031*//*5 19 55*/ /* this will change the background color of the card when it is flipped */
-                        }
                     </style>
                 </div>
             </div>
             <div class="about">
                 <!--<div class="about-title">Hello!</div>   -->
-                <div class="my-image"><img src="ph.png" alt="my-image" style="height: 250px; width: 250px; ">
-                    <h1 class="display-6" style="text-shadow: 0 0 2px #000000,0 0 2px #000000,0 0 2px #000000,0 0 2px #000000 ; padding-left:20px ">Sneha Das</h1>
-                    <p class="lead mb-0" style="text-shadow: 0 0 1px #000000,0 0 1px #000000,0 0 1px #000000,0 0 1px #000000 ;">Frontend web developer & designer, competitive programmer, enthusistic learner and artist, <em>looking for</em> Frontend Developer and SDE <em>internship</em> opportunities</p>
+                <div class="my-image"><img src="pho.png" alt="my-image" id="getimg">
+                    <h1 class="display-6" id="getimg2">Sneha Das</h1>
+                    <p class="lead mb-0" id="getimg3">Frontend web developer & designer, competitive programmer, enthusistic learner and artist, <em>looking for</em> Frontend Developer and SDE <em>internship</em> opportunities</p>
                 </div>             
             </div>
         </div>
-    </section>
+    </section> 
   
 <br><br><br><br>
     <!--SOCIAL MEDIA SIDEBAR-->
@@ -104,11 +87,11 @@
     <div class="sidebar" style="text-align: bottom;">
       <!-- Social media links -->
       <img src="download-modified.png" alt="yin/yang" onclick="myFunction()" id="button">
-      <a href="mailto:snehadas0819@gmail.com" target="_blank"><img src="Gmail_Logo_32px.png" alt="gmail" style="height: 30px; width: 30px;"></a><br>
-      <a href="https://twitter.com/i_am_snehadas" target="_blank"><img src="logo-white.png" alt="X" style="height: 30px; width: 30px;"></a><br>
-      <a href="https://www.linkedin.com/in/iamsnehadas" target="_blank"><img src="in-box-variations.png" alt="LinkedIn" style="height: 35px; width: 35px;"></a><br>
-      <a href="https://github.com/iamsnehadas" target="_blank"><img src="github-mark-white.png" alt="GitHub" style="height: 35px; width: 35px;"></a><br>
-      <a href="https://discordapp.com/users/912726606932500531" target="_blank"><img src="discord-mark-blue.png" alt="Discord" style="height: 35px; width: 35px;"></a><br>
+      <a href="mailto:snehadas0819@gmail.com" target="_blank"><img src="Gmail_Logo_32px.png" alt="gmail" class="logo" ></a><br>
+      <a href="https://twitter.com/i_am_snehadas" target="_blank"><img src="logo-white.png" alt="X" class="logo" ></a><br>
+      <a href="https://www.linkedin.com/in/iamsnehadas" target="_blank"><img src="in-box-variations.png" alt="LinkedIn" class="logo" ></a><br>
+      <a href="https://github.com/iamsnehadas" target="_blank"><img src="github-mark-white.png" alt="GitHub" class="logo" ></a><br>
+      <a href="https://discordapp.com/users/912726606932500531" target="_blank"><img src="discord-mark-blue.png" alt="Discord" class="logo"></a><br>
       <!-- Add more social links as needed -->
   </div>
 
@@ -120,7 +103,7 @@
     <section id="Education">
       <div class="left">          
         <div>
-        <img src="Education_logo_portfolio.png" alt="Logo" style="height: 250px; width: 250px;">
+        <img src="Education_logo_portfolio-removebg-preview.png" alt="Logo" id="myown">
         <div id="edu" style="text-shadow: 0 0 2px #000000,0 0 2px #000000,0 0 2px #000000,0 0 2px #000000 ;">Education</div>
         </div>
       </div>
@@ -129,10 +112,10 @@
         <div style="height: 8vh"></div>
         <div class="timeline">
           <div class="timeline__section">
-            <div class="timeline__left" style="padding-left: 129px;"> <!--left:100,129-->
+            <div class="timeline__left" id="t1"> <!--left:100,129-->
               <div class="timeline__date">
                 <div>Jalpaiguri Government <br> Engineering College</div>
-                <div>2021- 2025</div>
+                <div id="duration">2021- 2025</div>
               </div>
             </div>
             <div class="timeline__tracker">
@@ -152,10 +135,10 @@
             </div>
           </div>
           <div class="timeline__section">
-            <div class="timeline__left" id="t2" style="padding-left:202px;"> <!--200,190,186,198,188,202-->
+            <div class="timeline__left" id="t2"> <!--200,190,186,198,188,202-->
               <div class="timeline__date" >
                 <div>Serampore Girls' <br>High School</div>
-                <div>2019- 2021</div>
+                <div id="duration">2019- 2021</div>
               </div>
             </div>
             <div class="timeline__tracker">
@@ -176,10 +159,10 @@
           </div>
           <div class="timeline__section" >
             <div class="timeline__left">
-              <div class="timeline__date" style="padding-right: 0px;"> <!--padding-right:20px;-->
+              <div class="timeline__date" id="t3"> <!--padding-right:20px;-->
                 <div>Ramakrishna Sarada Mission Sister Nivedita Girls' School</div>
                 <br>
-                <div>2013-2019</div>
+                <div id="duration">2013-2019</div>
               </div>
             </div>
             <div class="timeline__tracker">
@@ -215,7 +198,7 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="mcard">
+          <div class="mcard" id="c1">
             <div class="wrapper" style="background: url(po.png)30% 1%/cover no-repeat;">
               <ul class="menu-content">
                   <li><a href="#"><i class="fab fa-github"></i></a></li>
@@ -226,12 +209,32 @@
               <div class="data">
                 <div class="mcontent">
                   <h1 class="title" style="text-shadow: 0 0 2px #000000,0 0 2px #000000,0 0 2px #000000,0 0 2px #000000 ;"><a href="https://sneha-das-portfolio.netlify.app/">Portfolio Website</a></h1>
-                  <p class="text">"This is my portfolio website built using HTML, CSS and vanilla JS. This website uses several animations as well as some of my own designs. Coded from scratch, the process of making this website taught me a lot about these languages."</p>
+                  <p class="text" id="prt1">"This is my portfolio website built using HTML, CSS and vanilla JS. This website uses several animations as well as some of my own designs. Developed and designed from scratch, the process of making this website taught me a lot about these languages and technologies."</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="mcard" style="margin-left: 100px;">
+          <div class="mcard" id="c2">
+            <div class="wrapper" style="background: url(Gix.png)50% 1%/cover no-repeat;">
+              <ul class="menu-content">
+                  <li><a href="#"><i class="fab fa-github"></i></a></li>
+                  <li><a href="#"><i class="fab fa-html5"></i></a></li>
+                  <li><a href="#"><i class="fab fa-css3-alt"></i></a></li>
+                  <li><a href="#"><i class="fab fa-js"></i></a></li>
+              </ul>
+              <div class="data">
+                <div class="mcontent">
+                  <h1 class="title"><a href="https://taskdesk-iamsnehadas.netlify.app/">TaskDesk</a></h1>
+                  <p class="text" id="prt2">"This is a website made using HTML, CSS, JavaScript which combines several 
+                    productivity tools all at the same place. This website enables users to access various 
+                    productivity tools like to-do list maker, pomodoro timer, stopwatch, note-maker etc., 
+                    making it possible to increase their productivity without needing to switch between 
+                    several different tools."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mcard" id="c3">
             <div class="wrapper" style="background: url(Nix.png)30% 1%/cover no-repeat;">
               <ul class="menu-content">
                   <li><a href="#"><i class="fab fa-github"></i></a></li>
@@ -242,7 +245,8 @@
               <div class="data">
                 <div class="mcontent">
                   <h1 class="title"><a href="https://iamsnehadas.github.io/PixArtMaker/">PixelArtMaker</a></h1>
-                  <p class="text">"This is a pixel-art maker application, where user can easily create pixel-artworks with custom colors and a grid with dimensions as required."</p>
+                  <p class="text" id="prt3">"This is a pixel-art maker application, where user can easily create pixel-artworks 
+                    with custom colors and a grid with dimensions as required."</p>
                 </div>
               </div>
             </div>
@@ -264,7 +268,7 @@
     </div>
     <section class="skills" style="justify-content: center space-evenly;">
         <div>
-          <div class="skill-subsection1" style="margin-left:-50px;">
+          <div class="skill-subsection1">
             <h2>Front-end Technologies <br> and tools</h2><br>
             <h5>HTML</h5>
             <div class="skill-bar">
@@ -294,7 +298,8 @@
         </div>
         <div>
       <div>
-        <div class="skill-subsection2" style="padding-left: 250px;">
+        <br><br>
+        <div class="skill-subsection2">
           <h2>Programming-Languages</h2><br>
           <h5>C++</h5>
           <div class="skill-bar">
@@ -327,7 +332,7 @@
         Feel free to connect with me through my socials or message me through the form below! <br><br><br>
       </div>
       <link rel="stylesheet" href="cont.css">        
-        <div class="container">
+        <div class="contactcontainer">
           <div id="mob">
              <p> <em>Email id: snehadas0819@gmail.com</em>
           </div>
@@ -364,7 +369,7 @@
                 <textarea id="subject" name="subject" placeholder="Write something.." style="height:180px"></textarea>
               </div>
             </div>
-            <div class="row">
+            <div class="row" id="rowsub">
               <input type="submit" value="Submit">
             </div>
           </form>
@@ -377,7 +382,7 @@
 <!--FOOTER SECTION-->
 
 
-<footer class="text-white bg-dark">
+<footer class="text-white">
   <div class="footcont">
     <div>Copyright &copy; 2023 Sneha Das</div>
 </div>
