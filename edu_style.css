@@ -1,3 +1,6 @@
+@media (min-width: 992px) {
+  /* Insert your CSS rules here */
+  
 .container {
     display: flex;
   }
@@ -17,9 +20,9 @@
     padding: 10px;
   }
 :root {
-    --color-black: rgba(0, 0, 0, 0.959);
+    --color-black:  rgba(0,0,0,.959);
     --color-white: white;
-    --color-grey: #494949;
+    --color-grey:rgba(240, 248, 255, 0.355);
     --sticky-top-pos: 30vh;
     --buffer: 5rem;
   }
@@ -29,7 +32,6 @@
     margin: 0;
     padding: 0;
     bottom: 0;
-    background-color: var(--color-black);
     color: var(--color-white);
   }
   .timeline {
@@ -75,12 +77,14 @@
   }
   
   .timeline__right > div {
-    background-color: var(--color-black);
+    background: linear-gradient(black,rgb(3, 12, 25),rgb(18, 10, 52),rgb(4, 1, 0));
     padding-bottom: var(--buffer);
     padding-left: 45px;
     margin-left: 4px;
   }
-  
+  .light-mode .timeline__right > div{
+    background: linear-gradient(rgb(158, 80, 38) ,rgb(101, 87, 42),rgb(52, 35, 10));
+  }
   .timeline__date > div:first-child {
     font-size: 1.3rem;
   }
@@ -99,9 +103,154 @@
     font-size: 2rem;
     color: var(--color-grey);
     transition: color 1s cubic-bezier(0, 0.39, 0.58, 1);
-  }
-  
-  .animate-on-scroll {
+  }  .animate-on-scroll {
     color: var(--color-white);
   }
+
+  #t1{
+    padding-left: 129px;
+  }
+
+  #t2{
+    padding-left:202px;
+  }
+
+  #t3{
+    padding-right: 0px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Styles for mobile devices */
+@media (max-width: 767px) {
+    
+  .container {
+    display: flex;
+  }
+
+  .left {
+    flex: 30%;
+    display: flex;
+    
+    padding: 10px;
+    padding-bottom: 0;
+    font-size: 1.8rem;
+    margin-left: 10px;
+    margin-top: -100px;
+  }
+  .right {
+    flex: 70%;
+    padding: 10px;
+    margin-left:-380px ;
+    margin-top: -20px;
+  }
+  #duration{
+    font-size: 10px;
+  }
+  :root {
+    --color-black:  rgba(0,0,0,.959);
+    --color-white: white;
+    --color-grey:rgba(240, 248, 255, 0.355);
+    --sticky-top-pos: 30vh;
+    --buffer: 5rem;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    color: var(--color-white);
+  }
+  .timeline {
+    max-width: 100px;
+    margin: 0 auto;
+  }
+
+  .timeline__section {
+    display: grid;
+    grid-template-columns: auto 5px 10px auto;
+    align-items: start;
+    position: relative;
+  }
+
+  .timeline__left {
+    font-size: 1rem;
+    text-align: right;
+  }
+
+  .timeline__left,
+  .timeline__middle,
+  .timeline__tracker {
+    position: sticky;
+    top: var(--sticky-top-pos);
+    /*   margin-bottom: var(--buffer); */
+  }
+
+  .timeline__left,
+  .timeline__middle {
+    margin-bottom: var(--buffer);
+  }
+
+
+  .timeline__right > div {
+    min-width: 150px;
+    background: linear-gradient(black,rgb(3, 12, 25),rgb(18, 10, 52),rgb(4, 1, 0));
+    padding-bottom: var(--buffer);
+    padding-left: 20px;
+    margin-left: 4px;
+  }
+  .light-mode .timeline__right > div{
+    background: linear-gradient(rgb(158, 80, 38) ,rgb(101, 87, 42),rgb(52, 35, 10));
+  }
+  .timeline__date > div:first-child {
+    font-size: 0.7rem;
+  }
+
+  .timeline__bullet {
+    --bullet-dims: 20px;
+    background-color: var(--color-white);
+    width: var(--bullet-dims);
+    height: var(--bullet-dims);
+    border-radius: 99999%;
+    transform: translateX(calc(var(--bullet-dims) / 2 + 2px));
+    float: right;
+  }
+
+  .timeline__content {
+    font-size: 1rem;
+    color: var(--color-grey);
+    transition: color 1s cubic-bezier(0, 0.39, 0.58, 1);
+  }  .animate-on-scroll {
+    color: var(--color-white);
+  }
+  #t1{
+    padding-left: 129px;
+    margin-left: 5px;
+  }
+
+  #t2{
+    padding-left:202px;
+    margin-left: -60px;
+  }
+
+  #t3{
+    padding-right: 0px;
+    margin-left: 132px;
+  }
+
   
+}
