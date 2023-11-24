@@ -1,20 +1,41 @@
-body {
+@media (min-width: 902px){
+  body {
     font-family: Arial, sans-serif;
+    background: linear-gradient(black,rgb(3, 12, 25),black,rgb(10, 3, 24),rgb(12, 7, 35),rgb(42, 52, 101),rgba(38, 68, 144, 0.784) ,rgb(42, 52, 101),rgb(18, 10, 52),rgb(4, 1, 0));
 }
 header, footer {
-    background-color: #040404;
     /*#333 bg-dark */
     color: #fff;
     text-align: center;
     padding: 10px;
-    height: max-content;
+    height: max-content; 
 }
-
+footer{
+  background-color: #3e3d3d5b;  
+}
+.navbar{
+  background-color: #3e3d3d56;
+  box-shadow: 3px 3px rgb(144, 140, 146) ;
+}
 nav ul {
     list-style: none;
     padding: 0;
 }
-
+.contactcontainer{
+  display: flex; /* this will make the container element use flexbox layout */
+  justify-content: center; /* this will center the container element horizontally */
+  align-items: center; /* this will center the container element vertically */
+}
+.abtcontainer{
+  display: flex; /* this will make the container element use flexbox layout */
+  justify-content: center; /* this will center the container element horizontally */
+  align-items: center; /* this will center the container element vertically */
+}
+.getcontainer {
+  display: flex; /* this will make the container element use flexbox layout */
+  justify-content: center; /* this will center the container element horizontally */
+  align-items: center; /* this will center the container element vertically */
+}
 nav ul li {
     display: inline;
     margin: 0 10px;
@@ -23,6 +44,10 @@ nav ul li {
 
 section {
     padding: 20px;
+}
+#myown{
+  height: 250px; 
+  width: 250px;
 }
 /* CSS for the sidebar */
 .sidebar {
@@ -100,11 +125,20 @@ section {
     width: 130%;
   }
   .skill-bar-fill {
-    background-color: #cb985d;
+    background-color: #140f2c;
     height: 100%;
     left: 0;
     position: absolute;
     top: 0;
+  } 
+  .light-mode .skill-bar-fill{
+    background-color: #cb985d;;
+  } 
+  .skill-subsection1{
+    margin-left:-50px;
+  }
+  .skill-subsection2{
+    padding-left: 250px;
   }
   #more{
     font-size: 30px; 
@@ -123,7 +157,8 @@ section {
     font-size: small;
   }
   .light-mode {
-    background-color: #9E665C;/*rgb(122, 66, 66);*/
+    /*background-color: #9E665C;*//*rgb(122, 66, 66);*/
+    background: linear-gradient(rgb(77,27,5), rgba(223, 127, 38, 0.784) ,rgb(147, 50, 9),rgb(92, 56, 6),rgb(147, 91, 13),rgb(186, 120, 28),rgb(159, 65, 15),rgb(77, 27, 2),rgb(159, 65, 15),rgb(186, 99, 28),rgba(197, 91, 16, 0.784),rgb(77,27,5));
   }
 
 #button{
@@ -143,4 +178,233 @@ section {
   font-size: larger;
   display: flex;
   justify-content: center;
+}
+#getimg{
+  height: 250px; 
+  width: 250px; 
+}
+.logo{
+  height: 30px;
+  width:30px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+/* Styles for mobile devices */
+@media (max-width: 760px) {
+  body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(black,rgb(3, 12, 25),black,rgb(10, 3, 24),rgb(12, 7, 35),rgb(42, 52, 101),rgba(38, 68, 144, 0.784) ,rgb(42, 52, 101),rgb(18, 10, 52),rgb(4, 1, 0));
+  }
+
+  footer{
+    background-color: #3e3d3d5b;  
+  }
+  #getimg{
+    height: 100px;
+    width: auto;
+    margin-top:-950px;
+    margin-left: 120px;
+    margin-bottom: 50px;
+  }
+  #getimg2{
+    text-shadow: 0 0 2px #000000,0 0 2px #000000,0 0 2px #000000,0 0 2px #000000 ;
+    padding-left:80px;
+    margin-top: -450px;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffffe9;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+  }
+  #getimg3{
+    text-shadow: 0 0 2px #000000,0 0 2px #000000,0 0 2px #000000,0 0 2px #000000 ;
+    padding-left:20px;
+    font-size: 10px;
+    text-align: right;
+    margin-top: 20px;
+    color: #ffffffe9;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  h4{
+    font-size: 15px;
+  }
+  footer {
+    /*#333 bg-dark */
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    height: max-content;  
+  }
+  Show-clock{
+    padding-top: -200px;
+  }
+  img{
+    height: 20px;
+    width: 20px;
+  }
+  #button{
+    margin-bottom: 20px;
+    margin-left: 4px;
+  }
+  .logo{
+    height:15px;
+    width: 15px;
+  }
+  .navbar-nav{
+    padding: 0px;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  #navbarNav{
+    height: 160px;
+    font-size: 8px;  
+    margin-left: 18px;
+  }
+  .contactcontainer{
+    display: flex; /* this will make the container element use flexbox layout */
+  }
+  nav ul li {
+    display: block;
+    margin: 0;
+  }
+
+  section {
+    padding: 10px;
+  }
+  /* CSS for the sidebar */
+  .sidebar {
+    height: auto; /* Full-height: remove this if you want "auto" height */
+    width: 25px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0; /* Stay on the left */
+    background-color: #111111b4; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 50px;
+  }
+
+  .sidebar a {
+    padding: 3px 4px 3px 6px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #818181;
+    display: block;
+  }
+
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  #myown{
+    height: 150px; 
+    width: 150px;
+  }
+  #projects{
+    text-align: center;
+    font-size: 30px;
+    /*color: rgb(8, 8, 8);*/
+    text-shadow: 0 0 2px #3e3d3d, 0 0 2px #3e3d3d, 0 0 2px #555555, 0 0 2px #515050;
+    color:aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: -100px;
+  }
+  #skl{
+    text-align: center;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: -150px;
+  }
+  #cont{
+    text-align: center;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  #Cont{
+    font-size: 12px;
+    text-align: center;
+    color: antiquewhite;
+  }
+  #edu{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  #mob{
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top:350px;
+    color:beige;
+    opacity: 60%;
+    border: #818181;
+  }
+  .skills{
+    display:contents;
+    justify-content: center;
+  }
+  .skill-bar {
+    background-color: #ddd;
+    height: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 90%;
+  }
+  .skill-bar-fill {
+    background-color: #140f2c;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  h2{
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .skill-subsection1{
+    margin-left:20px;
+  }
+  .skill-subsection2{
+    padding-left: 20px;
+  }
+  #more{
+    font-size: 20px;  
+    margin-top: 0px;
+    margin-bottom: 200px;
+    padding-left: 150px;
+  }
+  #more a{
+    color:#c16b0f;
+  }
+  .back-to-top{
+    text-align: center;
+    align-items: first baseline;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    display: none;
+    font-size: small;
+  }
+  
+  .light-mode {
+    /*background-color: #9E665C;*//*rgb(122, 66, 66);*/
+    background: linear-gradient(rgb(77,27,5), rgba(223, 127, 38, 0.784) ,rgb(147, 50, 9),rgb(92, 56, 6),rgb(147, 91, 13),rgb(186, 120, 28),rgb(159, 65, 15),rgb(77, 27, 2),rgb(159, 65, 15),rgb(186, 99, 28),rgba(197, 91, 16, 0.784),rgb(77,27,5));
+  }
+
+
 }
