@@ -117,7 +117,7 @@
   .mcard {
     float: left;
     padding: 1.5rem;
-    min-width: 300px;
+    min-width: 700%;
     margin-left: -30px;
   }
   .mcard .menu-content {
