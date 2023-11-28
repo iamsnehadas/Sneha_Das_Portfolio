@@ -85,7 +85,7 @@ body {
     background: linear-gradient(#4b2730c0,lightsalmon);
 }
 .light-mode .card-back{
-    background: linear-gradient(black,moccasin,black);
+    background: linear-gradient(black,gray,black);
 }
 .card:hover .card-front {
     transform: rotateY(180deg); /* this will flip the front element when the card is hovered */
@@ -179,7 +179,7 @@ body {
     background: linear-gradient(#4b2730c0,lightsalmon);
 }
 .light-mode .card-back{
-    background: linear-gradient(black,moccasin,black);
+    background: linear-gradient(black,rgba(61, 61, 61, 0.9),black);
 }
 .card:hover .card-front {
     transform: rotateY(180deg); /* this will flip the front element when the card is hovered */
