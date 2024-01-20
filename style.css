@@ -119,7 +119,6 @@ section {
   }
   .skill-bar {
     background-color: #ddd;
-    background:linear-gradient(#ddd,white);
     height: 10px;
     margin-bottom: 10px;
     position: relative;
@@ -127,6 +126,7 @@ section {
   }
   .skill-bar-fill {
     background-color: #140f2c;
+    background:linear-gradient(#140f2c,white);
     height: 100%;
     left: 0;
     position: absolute;
