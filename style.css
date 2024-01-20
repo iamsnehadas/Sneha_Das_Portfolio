@@ -1,4 +1,4 @@
-@media (min-width: 902px){
+@media (min-width: 761px){
   body {
     font-family: Arial, sans-serif;
     background: linear-gradient(black,rgb(3, 12, 25),black,rgb(10, 3, 24),rgb(12, 7, 35),rgb(42, 52, 101),rgba(38, 68, 144, 0.784) ,rgb(42, 52, 101),rgb(18, 10, 52),rgb(4, 1, 0));
@@ -119,6 +119,7 @@ section {
   }
   .skill-bar {
     background-color: #ddd;
+    background:linear-gradient(#ddd,white);
     height: 10px;
     margin-bottom: 10px;
     position: relative;
