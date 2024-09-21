@@ -1,10 +1,9 @@
-@media (min-width: 761px){
+@media (min-width: 902px){
   body {
     font-family: Arial, sans-serif;
     background: linear-gradient(black,rgb(3, 12, 25),black,rgb(10, 3, 24),rgb(12, 7, 35),rgb(42, 52, 101),rgba(38, 68, 144, 0.784) ,rgb(42, 52, 101),rgb(18, 10, 52),rgb(4, 1, 0));
 }
 header, footer {
-    /*#333 bg-dark */
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -22,19 +21,19 @@ nav ul {
     padding: 0;
 }
 .contactcontainer{
-  display: flex; /* this will make the container element use flexbox layout */
-  justify-content: center; /* this will center the container element horizontally */
-  align-items: center; /* this will center the container element vertically */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 .abtcontainer{
-  display: flex; /* this will make the container element use flexbox layout */
-  justify-content: center; /* this will center the container element horizontally */
-  align-items: center; /* this will center the container element vertically */
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
 }
 .getcontainer {
-  display: flex; /* this will make the container element use flexbox layout */
-  justify-content: center; /* this will center the container element horizontally */
-  align-items: center; /* this will center the container element vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 nav ul li {
     display: inline;
@@ -51,14 +50,14 @@ section {
 }
 /* CSS for the sidebar */
 .sidebar {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 80px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0; /* Stay on the left */
-    background-color: #111; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
+    height: 100%; 
+    width: 80px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
     padding-top: 200px;
   }
   
@@ -76,7 +75,6 @@ section {
   #projects{
     text-align: center;
     font-size: 50px;
-    /*color: rgb(8, 8, 8);*/
     text-shadow: 0 0 2px #3e3d3d, 0 0 2px #3e3d3d, 0 0 2px #555555, 0 0 2px #515050;
     color:aliceblue;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -157,7 +155,6 @@ section {
     font-size: small;
   }
   .light-mode {
-    /*background-color: #9E665C;*//*rgb(122, 66, 66);*/
     background: linear-gradient(rgb(77,27,5), rgba(223, 127, 38, 0.784) ,rgb(147, 50, 9),rgb(92, 56, 6),rgb(147, 91, 13),rgb(186, 120, 28),rgb(159, 65, 15),rgb(77, 27, 2),rgb(159, 65, 15),rgb(186, 99, 28),rgba(197, 91, 16, 0.784),rgb(77,27,5));
   }
 
@@ -186,6 +183,10 @@ section {
 .logo{
   height: 30px;
   width:30px;
+}
+
+.gap{
+  margin-top: 5%;
 }
 
 }
@@ -240,7 +241,6 @@ section {
     font-size: 15px;
   }
   footer {
-    /*#333 bg-dark */
     color: #fff;
     text-align: center;
     padding: 0px;
@@ -274,7 +274,7 @@ section {
     margin-left: 18px;
   }
   .contactcontainer{
-    display: flex; /* this will make the container element use flexbox layout */
+    display: flex; 
   }
   nav ul li {
     display: block;
@@ -284,16 +284,15 @@ section {
   section {
     padding: 10px;
   }
-  /* CSS for the sidebar */
   .sidebar {
-    height: auto; /* Full-height: remove this if you want "auto" height */
-    width: 25px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0; /* Stay on the left */
-    background-color: #111111b4; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
+    height: auto; 
+    width: 25px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #111111b4; 
+    overflow-x: hidden;
     padding-top: 50px;
   }
 
@@ -316,7 +315,6 @@ section {
   #projects{
     text-align: center;
     font-size: 30px;
-    /*color: rgb(8, 8, 8);*/
     text-shadow: 0 0 2px #3e3d3d, 0 0 2px #3e3d3d, 0 0 2px #555555, 0 0 2px #515050;
     color:aliceblue;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -403,7 +401,6 @@ section {
   }
   
   .light-mode {
-    /*background-color: #9E665C;*//*rgb(122, 66, 66);*/
     background: linear-gradient(rgb(77,27,5), rgba(223, 127, 38, 0.784) ,rgb(147, 50, 9),rgb(92, 56, 6),rgb(147, 91, 13),rgb(186, 120, 28),rgb(159, 65, 15),rgb(77, 27, 2),rgb(159, 65, 15),rgb(186, 99, 28),rgba(197, 91, 16, 0.784),rgb(77,27,5));
   }
 
